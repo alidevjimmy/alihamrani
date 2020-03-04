@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ali Hamrani - Web Developer & Programmer</title>
-    <link rel="shortcut icon" href="{{ asset('/images/ali2.jpg') }}">
+    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
     <link rel="stylesheet" href="{{ asset("/css/main.css") }}">
     <link rel="stylesheet" href="{{ asset('/css/desktop.css')}}">
     <link rel="stylesheet" href="{{ asset("/css/tablet.css")}}">
@@ -70,7 +70,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
 <div id="goup"><i class="fa fa-mouse text-white"></i></div>
 <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
     <header class="container">
-        <a class="navbar-brand logo-text-head-mob" href="http://alihamrani.ir">
+        <a class="navbar-brand logo-text-head-mob" href="{{ route('index') }}">
             <img src="{{ asset('/images/ali2.jpg') }}" style="border-radius: 50%" class="logo" alt="لوگو">
             <span class="font_mj_c text-logo"> علی حمرانی</span>
         </a>
@@ -100,7 +100,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
 <div class="jumbotron me" style="margin: 0">
     <img src="{{ asset('/images/me.jpeg') }}" style="border-radius: 50%" class="img-me" alt="من" data-aos="fade-down">
     <p>
-    <h1 class="display-4 font_mj_c text-white titles" data-aos="fade-in">
+    <h2 class="display-4 font_mj_c text-white titles" data-aos="fade-in">
         <a href="http://t.me/ali_jimmyX" class="social-media-header" target="_blank"><i
                 class="fab fa-telegram-plane"></i></a>
         <a href="tel:09384720059" class="social-media-header"><i class="fa fa-phone"></i></a>
@@ -109,10 +109,10 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
                 class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/ali-hamrani-4a7718197" class="social-media-header" target="_blank"><i
                 class="fab fa-linkedin-in"></i></a>
-    </h1></p>
+    </h2></p>
     <br>
-    <h4 class="text-white" data-aos="fade-in">من عاشق برنامه نویسی هستم<i class="fa fa-heart mr-1"
-                                                                          style="color: #ed5a64"></i></h4></i>
+    <h5 class="text-white" data-aos="fade-in">من عاشق برنامه نویسی هستم<i class="fa fa-heart mr-1"
+                                                                          style="color: #ed5a64"></i></h5></i>
     <br>
     <a class="btn know_me" href="#" id="knowme" data-aos="fade-left" role="button">مرا بهتر بشناسید</a>
     <a class="btn sefarsh" id="sefaresh" href="#contact" role="button"> سفارش</a>
@@ -126,13 +126,16 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
             <div class="div-border position-relative" style="top: 35px"></div>
             <h5 class="text-white float-right">علی حمرانی</h5>
             <p class="text-white d-inline-block position-relative" style="top: 10px;direction: rtl;text-align: right">
-                ۵ سال هست که برنامه نویسی رو شروع کردم.
-                ۳ سال برنامه نویسی حرفه ای میکنم که ۱ سال اون بصورت همکاری با شرکت ها و دوسال هم برنامه نویسی آزاد بوده.
+                من توسعه دهنده فول استک هستم که بهش میگن <a href="http://vrgl.ir/BkaD6" target="_blank" class="roboto-font red-color"> Full Stack Web Developer </a> .
+                <br>
+                ۵ ساله که برنامه نویسی میکنم که ۳ سال اون بصورت حرفه در بازار کار بوده.
+                در چارت <span class="red-color"> مهارت های من </span> بیشتر میتونید با مهارت های من آشنا بشید.
             </p>
-            <img src="{{ asset('/images/arrow.png') }}" alt="arrow">
         </div>
     </div>
-    <br>
+    <div  class="col-md-6 col-sm-12 d-flex offset-3">
+        <img src="{{ asset('/images/arr-w.png') }}" alt="arrow" class="show-arr offset-8">
+    </div>
     <div style="width: 100%;height: auto;text-align: center;margin-top: 10px">
         <a class="btn my-skills" id="my_skills" data-toggle="collapse" href="#collapseExample" role="button"
            aria-expanded="false"
@@ -400,13 +403,13 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
                 <span><i class="fa fa-copyright text-white"></i></span>
                 <span class="text-white">2020</span>
                 <span class="text-white"> | </span>
-                <span class="text-white">تمامی حقوق برای <a href="http://alihamrani.ir" class="alicopy">علی حمرانی</a> محفوظ است.</span>
+                <span class="text-white">تمامی حقوق برای <a href="{{ route('index') }}" class="alicopy">علی حمرانی</a> محفوظ است.</span>
             </div>
         </div>
         <br>
         <div class="row pt-2">
             <div style="margin: auto">
-                <p class="text-white" style="font-size: 8px">طرح از سید مصطفی موسوی</p>
+                <p class="text-white" style="font-size: 5px !important;">طرح از سید مصطفی موسوی</p>
             </div>
         </div>
     </div>

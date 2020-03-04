@@ -71,4 +71,53 @@ $(function () {
     $('.splash').css({
         display : 'none'
     })
+
+    $('#pasbede').click(function () {
+        $('#pasbede_info').css({
+            display: 'none'
+        })
+        $('#pasbede_content').css({
+            display: 'block',
+        })
+    })
+    $('#mehrgram').click(function () {
+        $('#mehrgram_info').css({
+            display: 'none'
+        })
+        $('#mehrgram_content').css({
+            display: 'block',
+        })
+    })
+    $('#pishgam').click(function () {
+        $('#pishgam_info').css({
+            display: 'none'
+        })
+        $('#pishgam_content').css({
+            display: 'block',
+        })
+    })
+    $('#rest').click(function () {
+        $('#rest_info').css({
+            display: 'none'
+        })
+        $('#rest_content').css({
+            display: 'block',
+        })
+    })
+    $('#adminpanel').click(function () {
+        $('#adminpanel_info').css({
+            display: 'none'
+        })
+        $('#adminpanel_content').css({
+            display: 'block',
+        })
+    })
+    $('#ramanmarket').click(function () {
+        $('#ramanmarket_info').css({
+            display: 'none'
+        })
+        $('#ramanmarket_content').css({
+            display: 'block',
+        })
+    })
 });

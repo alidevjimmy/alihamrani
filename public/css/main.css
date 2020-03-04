@@ -18,14 +18,14 @@ body {
 
 @font-face {
     font-family: 'Mj_Casablanca Heavy';
-    src : url('../fonts/Mj_Casablanca Heavy.woff');
+    src : url('/fonts/Mj_Casablanca Heavy.woff');
     format('woff'), font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Mj_Tunisia';
-    src : url('../fonts/Mj_Tunisia.woff');
+    src : url('/fonts/Mj_Tunisia.woff');
     format('woff'),
     font-weight: normal;
     font-style: normal
@@ -94,6 +94,8 @@ body{
     max-height: 350px;
     margin-bottom: 0px;
     transition: 0.7s all !important;
+    border: 5px solid #fff;
+    height: 300px;
 }
 .sefarsh {
     border: 1px solid #ad3740 !important;
@@ -390,4 +392,96 @@ input , textarea {
     height: 100%;
     position: fixed;
     z-index: 100000000000000000000000000000000000000000000000000000000000000221300000;
+}
+
+.ref1 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    /*border-bottom: 8px solid rgba(0,0,0,0.1);*/
+}
+
+.info-icon {
+    font-size: 40px;
+    border-radius: 50% !important;
+    border: 4px solid #d9ac78 !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+.fit-div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    margin: 0;
+    position: relative;
+    top: 0;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 8px solid rgba(0,0,0,0.3);
+}
+
+.red-color {
+    color : #d41b3f;
+}
+.red-color:hover {
+    color : #d41b3f;
+}
+.content-div-style {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px 5px 0 0;
+    border-bottom: 8px solid rgba(0,0,0,0.1);
+}
+
+#pasbede_content {
+    display: none;
+    transition: 1s all;
+}
+#mehrgram_content {
+    display: none;
+    transition: 1s all;
+}
+#pishgam_content {
+    display: none;
+    transition: 1s all;
+}
+#rest_content {
+    display: none;
+    transition: 1s all;
+}
+#adminpanel_content {
+    display: none;
+    transition: 1s all;
+}
+#ramanmarket_content {
+    display: none;
+    transition: 1s all;
+}
+#pasbede_img {
+    background-image: url("/images/pasbedesite.png");
+}
+#mehrgram_img {
+    background-image: url("/images/mehrgram.png");
+    background-position: center;
+}
+#pishgam_img {
+    background-image: url("/images/pishgam.png");
+    background-position: center;
+}
+#rest_img {
+    background-image: url("/images/rest.png");
+}
+#adminpanel_img {
+    background-image: url("/images/adminpanel.png");
+    background-position: center;
+}
+#ramanmarket_img {
+    background-image: url("/images/ramanmarket.png");
+    /*background-position: center;*/
+}
+.show-arr {
+    width: 92px;
+    position: relative;
+    top: 0;
+    right: -245px;
 }
