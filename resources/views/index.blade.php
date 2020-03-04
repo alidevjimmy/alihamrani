@@ -36,9 +36,8 @@
         </div>
     </div>
 </div>
-<?php
-if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SESSION['message'])) {
-?>
+
+@if(session('status') == 'success' && session('message'))
 <div class="alert alert-warning alert-dismissible fade show" role="alert"
      style="direction: rtl;text-align: right;background-color: #4caf50 !important;color: white !important;border-radius: 3px;border-bottom: 8px solid rgba(0,0,0,0.1) !important;    position: fixed;
     top: 87px;
@@ -47,12 +46,12 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
     border: none;
     z-index: 10000000000000000;">
     <i class="fa fa-check ml-2 justify-content-center"></i>
-    <?php echo $_SESSION['message'] ?>
+    {{ session('message') }}
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-<?php } else if (isset($_SESSION['error']) && $_SESSION['status'] == 'error' && isset($_SESSION['message'])) { ?>
+@elseif(session('status') == 'error' && session('message'))
 <div class="alert alert-warning alert-dismissible fade show" role="alert"
      style="direction: rtl;text-align: right;background-color: #f44336 !important;color: white !important;border-radius: 3px;border-bottom: 8px solid rgba(0,0,0,0.1) !important;position: fixed;
     top: 87px;
@@ -61,12 +60,12 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
     border: none;
     z-index: 10000000000000000;">
     <i class="fa fa-info-circle ml-2 justify-content-center"></i>
-    <?php echo $_SESSION['message'] ?>
+    {{ session('message') }}
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-<?php } ?>
+@endif
 <div id="goup"><i class="fa fa-mouse text-white"></i></div>
 <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
     <header class="container">
@@ -340,7 +339,8 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
                 <div class="row">
                     <div class="col-sm-8">
                         <h3 class="mac_title offset-1">ارسال پیغام</h3>
-                        <form action="php/contact.php" method="post" class="offset-1">
+                        <form action="{{ route('contact') }}" method="post" class="offset-1">
+                            @csrf
                             <input name="name" required id="name" type="text" class="form-control contact-input"
                                    placeholder="نام کامل">
                             <input name="phone" required id="phone" type="text" class="form-control contact-input"
@@ -366,7 +366,8 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
         </div>
         <div class="row mob-form mt-5">
             <div class="col-sm-12">
-                <form action="php/contact.php" method="post" class="offset-1">
+                <form action="{{ route('contact') }}" method="post" class="offset-1">
+                    @csrf
                     <input name="name" required id="name1" type="text" class="form-control contact-input"
                            placeholder="نام کامل">
                     <input name="phone" required id="phone1" type="text" class="form-control contact-input"

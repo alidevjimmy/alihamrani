@@ -15,6 +15,13 @@ class CreateSniffsTable extends Migration
     {
         Schema::create('sniffs', function (Blueprint $table) {
             $table->id();
+            $table->string('ip');
+            $table->string('city')->nullable();
+            $table->string('region')->nullable();
+            $table->string('country')->nullable();
+            $table->string('loc')->nullable();
+            $table->string('timezone')->nullable();
+            $table->string('detect' , 500)->nullable();
             $table->timestamps();
         });
     }
