@@ -1,0 +1,8 @@
+@media (min-width: 1025px) {
+    .mob-form {
+        display: none !important;
+    }
+    .titles {
+        font-size: 78px !important;
+    }
+}

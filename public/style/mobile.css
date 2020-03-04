@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+    .desktop_mac {
+        display: none !important;
+    }
+    .social-media-header {
+        display: none;
+    }
+    .img-me {
+        max-height: 150px;
+    }
+    .titles {
+        font-size: 37px;
+    }
+    .myimgabout {
+        display: none;
+    }
+
+    .header {
+        height: auto !important;
+        padding: 0 !important;
+    }
+    .ui-mob {
+        text-align: center !important;
+    }
+    .logo-text-head-mob {
+        padding-right: 10px !important;
+    }
+    .skill-language {
+        position: absolute;
+        top: 45px;
+        left: 133px !important;
+    }
+}
