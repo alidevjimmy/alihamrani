@@ -15,7 +15,7 @@ class CreateSniffsTable extends Migration
     {
         Schema::create('sniffs', function (Blueprint $table) {
             $table->id();
-            $table->string('ip');
+            $table->string('ip')->nullable();
             $table->string('city')->nullable();
             $table->string('region')->nullable();
             $table->string('country')->nullable();

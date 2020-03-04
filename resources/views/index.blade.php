@@ -97,7 +97,7 @@
     </header>
 </nav>
 <div class="jumbotron me" style="margin: 0">
-    <img src="{{ asset('/images/me.jpeg') }}" style="border-radius: 50%" class="img-me" alt="من" data-aos="fade-down">
+    <img src="{{ asset('/images/me.jpeg')}}" style="border-radius: 50%" class="img-me" alt="من" data-aos="fade-down">
     <p>
     <h2 class="display-4 font_mj_c text-white titles" data-aos="fade-in">
         <a href="http://t.me/ali_jimmyX" class="social-media-header" target="_blank"><i
